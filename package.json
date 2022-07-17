@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.4",
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "framer-motion": "^6.5.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
     "next": "latest",
     "next-seo": "^5.4.0",
     "react": "^18.2.0",
