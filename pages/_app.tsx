@@ -4,6 +4,7 @@ import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import logo from "../assets/fawb-trans.png";
 import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const App = (props: AppProps) => {
   const { Component, pageProps } = props;
@@ -28,7 +29,9 @@ const App = (props: AppProps) => {
           colorScheme: "light",
         }}
       >
-        <Component {...pageProps} />
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
       </MantineProvider>
     </>
   );

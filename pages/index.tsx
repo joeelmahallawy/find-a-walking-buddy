@@ -1,23 +1,21 @@
-import { Box, Center, Title, Text, Divider } from "@mantine/core";
+import { Box, Center, Divider, Heading, Text } from "@chakra-ui/react";
+import Head from "next/head";
 import React from "react";
 
 const IndexPage = () => {
   return (
     <>
-      <head>
-        <title>Findawalkingbuddy</title>
-      </head>
       <Center sx={{ flexDirection: "column" }}>
         <Box
-          sx={(theme) => ({
+          style={{
             flexDirection: "column",
             width: "100%",
             textAlign: "center",
-          })}
+          }}
           p={10}
         >
-          <Title>Findawalkingbuddy.com</Title>
-          <Divider mt={5} mb={5} />
+          <Heading>FindaWalkingBuddy</Heading>
+          <Divider mt={5} />
         </Box>
         <Center sx={{ width: "50%", flexDirection: "column" }}>
           <Text>
@@ -38,7 +36,8 @@ const IndexPage = () => {
             your soul-mate. The objective of this website is to bring people
             with common interests together by taking enjoyable walks around the
             city. We will email you and connect you with your walking buddy once
-            we've found a good match for you, so keep look out for your emails.
+            we've found a good match for you, so keep a look out for your
+            emails.
             {/* </span> */}
           </Text>
         </Center>
